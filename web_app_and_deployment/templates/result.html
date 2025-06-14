@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>FWI Prediction Result</h1>
+        <h2>The predicted FWI value is: {{ results}}</h2>
+        <a href="{{ url_for('predict_datapoint') }}" class="button">Back to Form</a>
+    </div>
+</body>
+</html>

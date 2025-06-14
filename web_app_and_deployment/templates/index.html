@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>🔥 Welcome to the Algerian Forest Fire Prediction App 🔥</h1>
+        <a href="{{ url_for('predict_datapoint') }}" class="button">Go to Prediction</a>
+    </div>
+</body>
+</html>
