@@ -6,6 +6,7 @@
 </head>
 <body>
     <div class="container">
+        <img src="{{ url_for('static', filename='Logo.jpg') }}" alt="Logo" class="logo-3d">
         <h1>FWI Prediction Result</h1>
         <h2>The predicted FWI value is: {{ results}}</h2>
         <a href="{{ url_for('predict_datapoint') }}" class="button">Back to Form</a>

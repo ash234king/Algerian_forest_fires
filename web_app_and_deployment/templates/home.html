@@ -4,6 +4,7 @@
     </head>
     <body>
         <div class="login">
+            <img src="{{ url_for('static', filename='Logo.jpg') }}" alt="Logo" class="logo-3d">
             <h1> FWI PREDICTION</h1>
             <form action="{{url_for('predict_datapoint')}}" method="post">
                 <input type="text" name="Temperature" placeholder="Temperature" required="required"/>
