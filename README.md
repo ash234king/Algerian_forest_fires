@@ -60,4 +60,7 @@ The goal is to build a regression model that can predict the Fire Weather Index 
   - Elastic Beanstalk as the deployment target
 
 
+## ✅ Note:-
+This project was fully deployed using AWS Elastic Beanstalk and CodePipeline.
+The original app was accessible at: http://algerian-forest-fires.eu-north-1.elasticbeanstalk.com/predictData (now terminated to avoid AWS charges).
 
