@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-df=pd.read_csv("C:\\Users\\yashv\\OneDrive\\Documents\\machine_learning\\ridge_and_lasso_prac\\Algerian_forest_fires_dataset_UPDATE.csv",header=1)
+df=pd.read_csv("data/Algerian_forest_fires_dataset_UPDATE.csv",header=1)
 print(df.head())
 print(df.info())
 
@@ -44,7 +44,7 @@ print(df.info())
 print(df.describe())
 
 ## lets save the clean dataset
-df.to_csv('C:\\Users\\yashv\\OneDrive\\Documents\\machine_learning\\ridge_and_lasso_prac\\Algerian_forest_fires_cleaned_dataset.csv',index=False)
+df.to_csv('data/Algerian_forest_fires_cleaned_dataset.csv',index=False)
 df_copy=df.drop(['day','month','year'],axis=1)
 print(df_copy.head())
 print(df_copy['Classes'].value_counts())

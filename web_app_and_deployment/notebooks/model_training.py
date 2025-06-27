@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-df=pd.read_csv('C:\\Users\\yashv\\OneDrive\\Documents\\machine_learning\\ridge_and_lasso_prac\\Algerian_forest_fires_cleaned_dataset.csv')
+df=pd.read_csv('data/Algerian_forest_fires_cleaned_dataset.csv')
 print(df.head())
 print(df.columns)
 

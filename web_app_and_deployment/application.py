@@ -8,9 +8,13 @@ application=Flask(__name__)
 app=application
 
 #import ridge regressor and standard scaler pickle
-ridge_model=pickle.load(open('C:\\Users\\yashv\\OneDrive\\Documents\\machine_learning\\web_app_and_deployment\\models\\ridge.pkl','rb'))
-standard_scaler=pickle.load(open('C:\\Users\\yashv\\OneDrive\\Documents\\machine_learning\\web_app_and_deployment\\models\\scaler.pkl','rb'))
+import os
 
+MODEL_PATH = os.path.join('models', 'ridge.pkl')
+SCALER_PATH = os.path.join('models', 'scaler.pkl')
+
+ridge_model = pickle.load(open(MODEL_PATH, 'rb'))
+standard_scaler = pickle.load(open(SCALER_PATH, 'rb'))
 
 @app.route("/")
 def hello_world():
