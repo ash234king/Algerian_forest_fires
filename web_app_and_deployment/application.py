@@ -10,8 +10,8 @@ app=application
 #import ridge regressor and standard scaler pickle
 import os
 
-MODEL_PATH = os.path.join('models', 'ridge.pkl')
-SCALER_PATH = os.path.join('models', 'scaler.pkl')
+MODEL_PATH = os.path.join('Algerian_forest_fires','web_app_and_deployment','models', 'ridge.pkl')
+SCALER_PATH = os.path.join('Algerian_forest_fires','web_app_and_deployment','models', 'scaler.pkl')
 
 ridge_model = pickle.load(open(MODEL_PATH, 'rb'))
 standard_scaler = pickle.load(open(SCALER_PATH, 'rb'))
